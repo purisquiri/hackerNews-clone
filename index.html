@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="app-container">
+      <div id="app-header">
+        <header class="header">
+          <div class="flex">
+            <span class="header-title">
+              <image class="header-logo" src="">
+              HackerNews  
+            </span>
+            <a ref='#/'class="header-link">Top</a>
+            <a ref='#/new'class="header-link">New</a>
+            <a ref='#/ask'class="header-link">Ask</a>
+            <a ref='#/show'class="header-link">Show</a>
+            <a ref='#/favorites'class="header-link">Favorites</a>
+          </div>
+        </header>
+      </div>
+      <div id="route-container">
+        <div id="router-outlet"></div>
+      </div>
+    </div>
+    <script type="module" src="app.js"></script>
+    <script src="//unpkg.com/navigo@6"></script>
+     <!-- https://npmjs.com/package/navigo -->
+  </body>
+</html>
