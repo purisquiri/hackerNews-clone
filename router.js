@@ -16,10 +16,10 @@ export default class RouterHandler {
       { path: "/show", page: Stories },
     ];
 
-    routes.forEach((route) => {
+    routes.forEach(({ path, page }) => {
       router
-        .on(route.path, () => {
-          route.page(route.path);
+        .on(path, () => {
+          page(path);
         })
         .resolve();
     });
